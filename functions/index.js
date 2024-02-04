@@ -11,7 +11,8 @@ exports.getInventory = functions.https.onRequest(async (req, res) => {
     const snapshot = await inventoryCollection.get();
     const inventory = [];
     snapshot.forEach((doc) => {
-      inventory.push(doc.data());
+      const id = doc.id;
+      inventory.push({id, ...doc.data()});
     });
     res.status(200).send(inventory);
   } catch (error) {
