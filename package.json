@@ -1,0 +1,15 @@
+{
+  "name": "inventory-system",
+  "version": "1.0.0",
+  "description": "Simple API using firebase cloud functions and Firebase cloud firestore as the primary database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase-tools": "^13.1.0"
+  }
+}
